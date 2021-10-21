@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-navbar toggleable="lg" type="light" variant="dark">
+      <div class="container d-flex contentlinks">
+        <b-navbar-brand>
+          <router-link to="/home">HOME</router-link>
+        </b-navbar-brand>
+        <b-navbar-brand>
+          <router-link to="/about">ABOUT</router-link>
+        </b-navbar-brand>
+        <b-navbar-brand>
+          <router-link to="/login">LOGIN</router-link>
+        </b-navbar-brand>
+      </div>
+    </b-navbar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App"
+};
 </script>
 
 <style>
@@ -24,5 +31,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+a,
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+.contentlinks{
+  width: 300px;
 }
 </style>
