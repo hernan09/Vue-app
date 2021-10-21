@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-navbar toggleable="lg" type="light" variant="dark">
-      <div class="container d-flex contentlinks m-0">
+      <div class="container d-flex contentlinks">
         <b-navbar-brand>
           <router-link to="/home">HOME</router-link>
         </b-navbar-brand>
