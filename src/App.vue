@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-navbar toggleable="lg" type="light" variant="dark">
-      <div class="container d-flex contentlinks">
+      <div class="container d-flex contentlinks m-0">
         <b-navbar-brand>
           <router-link to="/home">HOME</router-link>
         </b-navbar-brand>
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "App"
+  name: 'App',
 };
 </script>
 
@@ -30,7 +30,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-image: url('https://i.pinimg.com/originals/e0/6c/e7/e06ce7a59f9712e132a4aa6795f9399a.gif');
+  background-size: cover;
+  height: 100vh;
 }
 a,
 a:active,
@@ -39,7 +41,7 @@ a:visited {
   text-decoration: none;
   color: white;
 }
-.contentlinks{
+.contentlinks {
   width: 300px;
 }
 </style>
