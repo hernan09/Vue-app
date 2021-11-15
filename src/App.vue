@@ -11,6 +11,9 @@
         <b-navbar-brand>
           <router-link to="/login">LOGIN</router-link>
         </b-navbar-brand>
+        <b-navbar-brand>
+          <router-link to="/tareas">TAREAS</router-link>
+        </b-navbar-brand>
       </div>
     </b-navbar>
     <router-view></router-view>
